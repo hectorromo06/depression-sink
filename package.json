@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "express.js": "^1.0.0",
+    "handlebars": "^4.7.7",
+    "mysql2": "^2.3.3",
+    "node.js": "^0.0.1-security",
+    "sequelize": "^6.21.0"
+  }
+}
