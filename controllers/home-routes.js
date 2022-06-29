@@ -1,6 +1,8 @@
 const router = require("express").Router();
+
 const sequelize = require("../config/connection");
 const { Post, User, Comment } = require("../models");
+
 
 // get all posts for homepage
 router.get("/", (req, res) => {
@@ -95,4 +97,11 @@ router.get("/new-post", (req, res) => {
   res.render("new-post");
 });
 
+router.get('/login', (req, res) => {
+   res.render('login');
+});
+
+router.get('/dashboard', (req, res) => {
+  res.render('dashboard');
+});
 module.exports = router;
