@@ -44,7 +44,7 @@ var upload = multer({
     storage: storage
 });
  
-//! Routes start
+//! Routes start   put in api folder
  
 //route for Home page
 app.get('/', (req, res) => {
