@@ -1,1 +1,24 @@
-<div>welcome to my page</div>
+<div id="top-post">
+  <h2>Top Posts</h2>
+  <ol class="post-list">
+  {{#each posts as |post|}}
+    {{> top-post post }}
+  {{/each}}
+</ol>
+</div>
+
+<div id="recent-post">
+  <h2>Recent Posts</h2>
+  <ol class="post-list">
+  {{#each posts as |post|}}
+    {{> recent-post post }}
+  {{/each}}
+</ol>
+</div>
+
+
+
+
+
+
+
