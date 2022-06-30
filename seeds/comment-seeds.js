@@ -90,44 +90,44 @@ const commentdata = [
     comment_text:
       "daddy gang",
     user_id: 2,
-    post_id: 8,
+    post_id: 13,
   },
   {
     comment_text: "ikyfl.",
     user_id: 4,
-    post_id: 12,
+    post_id: 13,
   },
   {
     comment_text: "IKDR",
     user_id: 4,
-    post_id: 13,
+    post_id: 14,
   },
   {
     comment_text:
       "welcome home",
     user_id: 2,
-    post_id: 14,
+    post_id: 15,
   },
   {
     comment_text: "its giving, patriarchy",
     user_id: 3,
-    post_id: 12,
+    post_id: 13,
   },
   {
     comment_text: "ITS GIVING GIRL BOSS",
     user_id: 1,
-    post_id: 13,
+    post_id: 14,
   },
   {
     comment_text:
       "with all due respect, he's the founding father of the scrub empire",
     user_id: 5,
-    post_id: 12,
+    post_id: 13,
   },
   {
     comment_text: "MOMMY SUPREMECY",
     user_id: 2,
-    post_id: 13,
+    post_id: 14,
   },
   {
     comment_text: "abe lincoln of sponges",
@@ -138,12 +138,12 @@ const commentdata = [
     comment_text:
       "Spongebob is my founding father",
     user_id: 4,
-    post_id: 12,
+    post_id: 13,
   },
   {
     comment_text: "Patrick, Spongebob, Gary and Sandy for mt rushmore 2024",
     user_id: 10,
-    post_id: 12,
+    post_id: 13,
   },
 ];
 
