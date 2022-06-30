@@ -7,6 +7,7 @@
   <title>Depression Sink</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
 </head>
 
 <body>
@@ -16,15 +17,15 @@
         Depression Sink
       </h1>
       <nav>
-            <a href="/">Home</a>
-            <a href="/dashboard">Dashboard</a>
-             {{#if loggedIn}}
-             <a href="/" class="logout">Logout</a>
-             {{else}}
-            <a href="/login">Login</a>
-            {{/if}}
-             
-    </nav>
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        {{#if loggedIn}}
+        <a href="/" class="logout">Logout</a>
+        {{else}}
+        <a href="/login">Login</a>
+        {{/if}}
+
+      </nav>
     </header>
 
     <main>
@@ -35,17 +36,17 @@
     <footer>
       <h2>Thanks for visiting Depression Sink!</h2>
       <div>
-          <a href="/contact">Contact Us</a>
-          <a href="/guideline">Community Guidelines</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/guideline">Community Guidelines</a>
 
       </div>
     </footer>
   </div>
 
-   {{#if loggedIn}}
+  {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
- {{/if}}
- 
+  {{/if}}
+
 </body>
 
 </html>
