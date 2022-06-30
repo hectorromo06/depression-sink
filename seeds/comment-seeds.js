@@ -2,148 +2,148 @@ const { Comment } = require("../models");
 
 const commentdata = [
   {
-    comment_text: "Nunc rhoncus dui vel sem.",
-    user_id: 1,
-    post_id: 1,
-  },
-  {
-    comment_text:
-      "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+    comment_text: "You can do it!!",
     user_id: 2,
     post_id: 1,
   },
   {
-    comment_text: "Aliquam erat volutpat. In congue.",
-    user_id: 3,
-    post_id: 2,
-  },
-  {
-    comment_text: "Nunc rhoncus dui vel sem.",
-    user_id: 1,
-    post_id: 3,
-  },
-  {
     comment_text:
-      "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
-    user_id: 2,
+      "i seen worse",
+    user_id: 4,
     post_id: 1,
   },
   {
-    comment_text: "Aliquam erat volutpat. In congue.",
+    comment_text: "maybe $50",
     user_id: 3,
     post_id: 2,
   },
   {
-    comment_text: "Nunc rhoncus dui vel sem.",
+    comment_text: "aren't we all",
     user_id: 1,
     post_id: 3,
   },
   {
     comment_text:
-      "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+      "musty",
     user_id: 2,
-    post_id: 1,
+    post_id: 4,
   },
   {
-    comment_text: "Aliquam erat volutpat. In congue.",
+    comment_text: "yikes!!",
     user_id: 3,
-    post_id: 2,
+    post_id: 5,
   },
   {
-    comment_text: "Nunc rhoncus dui vel sem.",
-    user_id: 1,
-    post_id: 3,
+    comment_text: "WAY TO GO!!",
+    user_id: 10,
+    post_id: 7,
   },
   {
     comment_text:
-      "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
-    user_id: 2,
-    post_id: 1,
+      "teach me you ways",
+    user_id: 9,
+    post_id: 7,
   },
   {
-    comment_text: "Aliquam erat volutpat. In congue.",
-    user_id: 3,
-    post_id: 2,
+    comment_text: "facts",
+    user_id: 8,
+    post_id: 6,
   },
   {
-    comment_text: "Nunc rhoncus dui vel sem.",
+    comment_text: "hurricane",
     user_id: 1,
-    post_id: 3,
+    post_id: 8,
   },
   {
     comment_text:
-      "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
-    user_id: 2,
-    post_id: 1,
+      "yolo",
+    user_id: 9,
+    post_id: 9,
   },
   {
-    comment_text: "Aliquam erat volutpat. In congue.",
-    user_id: 3,
-    post_id: 2,
+    comment_text: "life is so unfair",
+    user_id: 8,
+    post_id: 10,
   },
   {
-    comment_text: "Nunc rhoncus dui vel sem.",
-    user_id: 1,
-    post_id: 3,
-  },
-  {
-    comment_text:
-      "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
-    user_id: 2,
-    post_id: 1,
-  },
-  {
-    comment_text: "Aliquam erat volutpat. In congue.",
-    user_id: 3,
-    post_id: 2,
-  },
-  {
-    comment_text: "Nunc rhoncus dui vel sem.",
-    user_id: 1,
-    post_id: 3,
+    comment_text: "dramatic",
+    user_id: 7,
+    post_id: 11,
   },
   {
     comment_text:
-      "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+      "roomates are a scam!!",
     user_id: 2,
-    post_id: 1,
+    post_id: 5,
   },
   {
-    comment_text: "Aliquam erat volutpat. In congue.",
+    comment_text: "what's it like to be perfect?",
+    user_id: 9,
+    post_id: 7,
+  },
+  {
+    comment_text: "whats the meaning of life?",
     user_id: 3,
-    post_id: 2,
-  },
-  {
-    comment_text: "Nunc rhoncus dui vel sem.",
-    user_id: 1,
-    post_id: 3,
+    post_id: 6,
   },
   {
     comment_text:
-      "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+      "daddy gang",
     user_id: 2,
-    post_id: 1,
+    post_id: 8,
   },
   {
-    comment_text: "Aliquam erat volutpat. In congue.",
-    user_id: 3,
-    post_id: 2,
+    comment_text: "ikyfl.",
+    user_id: 4,
+    post_id: 12,
   },
   {
-    comment_text: "Nunc rhoncus dui vel sem.",
-    user_id: 1,
-    post_id: 3,
+    comment_text: "IKDR",
+    user_id: 4,
+    post_id: 13,
   },
   {
     comment_text:
-      "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+      "welcome home",
     user_id: 2,
-    post_id: 1,
+    post_id: 14,
   },
   {
-    comment_text: "Aliquam erat volutpat. In congue.",
+    comment_text: "its giving, patriarchy",
     user_id: 3,
-    post_id: 2,
+    post_id: 12,
+  },
+  {
+    comment_text: "ITS GIVING GIRL BOSS",
+    user_id: 1,
+    post_id: 13,
+  },
+  {
+    comment_text:
+      "with all due respect, he's the founding father of the scrub empire",
+    user_id: 5,
+    post_id: 12,
+  },
+  {
+    comment_text: "MOMMY SUPREMECY",
+    user_id: 2,
+    post_id: 13,
+  },
+  {
+    comment_text: "abe lincoln of sponges",
+    user_id: 10,
+    post_id: 13,
+  },
+  {
+    comment_text:
+      "Spongebob is my founding father",
+    user_id: 4,
+    post_id: 12,
+  },
+  {
+    comment_text: "Patrick, Spongebob, Gary and Sandy for mt rushmore 2024",
+    user_id: 10,
+    post_id: 12,
   },
 ];
 
