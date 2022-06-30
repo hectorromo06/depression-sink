@@ -9,6 +9,10 @@ const hbs = exphbs.create({});
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+//image uploader
+const bodyparser = require('body-parser')
+const multer = require('multer')
+
 // const session = require("express-session");
 // const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
@@ -44,6 +48,11 @@ app.use(express.static(path.join(__dirname, "public")));
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
+// body-parser middleware use
+app.use(bodyparser.json())
+app.use(bodyparser.urlencoded({
+    extended: true
+}))
 // turn on routes
 app.use(routes);
 
