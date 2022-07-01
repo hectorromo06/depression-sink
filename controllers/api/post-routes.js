@@ -1,6 +1,10 @@
 const router = require("express").Router();
+
+const upload = require("../../utils/upload");
+const uploadController = require("../upload-routes");
+
 const sequelize = require("../../config/connection");
-const { Post, User, Comment } = require("../../models");
+const { Post, User, Comment, Image } = require("../../models");
 const withAuth = require("../../utils/auth");
 
 // get all users
@@ -64,12 +68,15 @@ router.get("/:id", (req, res) => {
     });
 });
 
-router.post("/", withAuth, (req, res) => {
+//router.post("/upload", upload.single("file"), uploadController.uploadFiles);
+
+router.post("/", withAuth, upload.single("file"), (req, res) => {
   // expects {title: 'Taskmaster goes public!', post_url: 'https://taskmaster.com/press', user_id: 1}
   Post.create({
     title: req.body.title,
     post_url: req.body.post_url,
     user_id: req.session.user_id,
+    data: req.session.data,
   })
     .then((dbPostData) => res.json(dbPostData))
     .catch((err) => {
