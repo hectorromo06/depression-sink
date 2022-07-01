@@ -10,12 +10,18 @@
       <input type="text" id="post-title" name="post-title" />
     </div>
     <div>
-      <label for="pix">Photo</label>
-      <input type="file" name="image" accept='image/*' id="pix" name="pix" />
+      <label for="image">Photo</label>
+      <input type="file" name="image" accept='image/*' id="image" />
     </div>
     <button type="submit" value="Upload" class="btn">Create</button>
   </form>
   </div>
+  <div class="row">
+        <div class="col-sm-12">
+          <div class="preview-images"></div>
+        </div>
+      </div>
+    </div>
 </section>
 
 {{#if posts.length}}
@@ -34,3 +40,24 @@
 
 
 <script src="/javascript/add-post.js"></script>
+    <script>
+      $(document).ready(function() {
+        let imagesPreview = function(input, placeToInsertImagePreview) {
+          if (input.files) {
+            let filesAmount = input.files.length;
+            for (i = 0; i < filesAmount; i++) {
+              let reader = new FileReader();
+              reader.onload = function(event) {
+                $($.parseHTML("<img>"))
+                  .attr("src", event.target.result)
+                  .appendTo(placeToInsertImagePreview);
+              };
+              reader.readAsDataURL(input.files[i]);
+            }
+          }
+        };
+        $("#input-files").on("change", function() {
+          imagesPreview(this, "div.preview-images");
+        });
+      });
+    </script>

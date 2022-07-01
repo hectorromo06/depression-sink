@@ -16,11 +16,9 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // pix: {
-    //   // type: DataTypes.STRING,
-    //   // allowNull: false,
-      
-    // },
+    image: {
+        type: DataTypes.BLOB("long"),
+      },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
