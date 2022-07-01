@@ -1,6 +1,10 @@
 const router = require("express").Router();
 const sequelize = require("../config/connection");
+<<<<<<< HEAD
 const { Post, User, Comment, Image } = require("../models");
+=======
+const { Post, User, Comment } = require("../models");
+>>>>>>> 944d8c3ae288389f464e0d7b88a218273e212e50
 const withAuth = require("../utils/auth");
 
 // get all posts for dashboard
