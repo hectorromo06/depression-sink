@@ -2,8 +2,24 @@
 <div>
   <h2>Dashboard</h2>
 
-  
-  <form class="new-post-form card">
+   {{!-- <form
+            class="mt-4"
+            action="/upload"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <div class="form-group">
+              <input
+                type="file"
+                name="file"
+                id="input-files"
+                class="form-control-file border"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form> --}}
+
+  <form class="new-post-form card"  enctype="multipart/form-data" >
     <h3>Create New Post</h3>
     <div>
       <label for="post-title">Title</label>
@@ -11,7 +27,13 @@
     </div>
     <div>
       <label for="post-url">Link</label>
-      <input id="post-url" name="post-url" />
+      {{!-- <input id="post-url" name="post-url" /> --}}
+      <input
+                type="file"
+                name="file"
+                id="input-files"
+                class="form-control-file border"
+              />
     </div>
     <button type="submit" class="btn">Create</button>
   </form>
