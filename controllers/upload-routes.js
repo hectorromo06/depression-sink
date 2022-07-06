@@ -1,4 +1,4 @@
-const { Post, User, Comment, Image } = require("../models");
+const { Post, User, Comment, Vote, Image } = require("../models");
 const withAuth = require("../utils/auth");
 
 const fs = require("fs");
