@@ -6,6 +6,7 @@ const { Post, User, Comment, Vote, Image } = require("../models");
 // const multer = require("multer");
 // const upload = multer({ dest: "/public/uploads/" });
 
+
 // get all posts for homepage
 router.get("/", (req, res) => {
   console.log("======================");
@@ -123,4 +124,11 @@ router.get("/new-post", (req, res) => {
   res.render("new-post");
 });
 
+router.get('/login', (req, res) => {
+   res.render('login');
+});
+
+router.get('/dashboard', (req, res) => {
+  res.render('dashboard');
+});
 module.exports = router;
