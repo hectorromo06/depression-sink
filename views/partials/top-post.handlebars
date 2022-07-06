@@ -1,9 +1,18 @@
 
 <article class="row top-post">
 <div class="column">
+
 <div class="card">
-    <h3><a href="{{post_url}}" target="_blank">{{title}}</a><span>({{format_url post_url}})</span></h3>
-    <p><a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a></p>
+    <h3><a href="{{content}}" target="_blank">{{title}}</a><span>({{format_url content}})</span></h3>
 </div>
+<div class="">
+    
+    
+     <a href="/post/{{id}}">{{post.length}} {{format_plural "like" postes.length}}</a>
+     {{vote_count}} {{format_plural "point" vote_count}} by {{user.username}} on {{format_date created_at}}
+    |
+    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+</div>
+    
 </div>
 </article>

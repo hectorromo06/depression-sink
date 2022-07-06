@@ -1,8 +1,9 @@
 <article class="row recent-post">
 <div class="column">
 <div class="card">
-    <h3><a href="{{post_url}}" target="_blank">{{title}}</a><span>({{format_url post_url}})</span></h3>
+    <h3><a href="{{content}}" target="_blank">{{title}}</a><span>({{format_url content}})</span></h3>
     <p><a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a></p>
+     {{vote_count}} {{format_plural "point" vote_count}} by {{user.username}} on {{format_date created_at}}
 </div>
 </div>
 </article>
