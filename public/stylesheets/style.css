@@ -52,11 +52,12 @@
     border-radius: 5px;
   }
   
-  .card {
+  /* .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      padding: 16px;
+      padding: 20px;
       text-align: center;
       background-color: #f1f1f1;
+      margin-bottom: 30px;
       
     }
   .column {
@@ -66,8 +67,9 @@
   }
   .top-post {
     height: 70px;
+    margin-bottom: 20px;
   }
-  
+   */
 
   #hero {
     width: 100%;
@@ -77,3 +79,15 @@
   
   }
  
+  .card{
+    width: 18rem;
+   border-radius: 10px;
+   border:none;
+   box-shadow: 10px 4px 10px rgba(0,0,0,0.6);
+  
+ }
+
+img{
+ width: 100%;
+ border-radius:10px 10px 0 0;
+}
