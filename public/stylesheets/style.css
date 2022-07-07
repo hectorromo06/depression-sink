@@ -12,7 +12,16 @@
     cursor: pointer;
     border-radius: 5px;
   }
+
+  nav {
+    margin-top: 2%;
+    margin-right: 2%;
+  }
   
+nav, a {
+  color: white;
+}
+
   .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       padding: 16px;
@@ -31,11 +40,11 @@
   
 
   #hero {
-    width: 100%;
-    height: 400px;
     background-image: url("/images/a5.jpg");
-    background-size: center;
-  
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
   }
  
 body,
@@ -60,25 +69,29 @@ html {
 header {
   border-bottom: 1px solid #ccc;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 1%;
+  background-color: #294c60;
+}
+
+header, h1 {
+  color: white;
 }
 
 footer {
-  border-top: 1px solid #ccc;
+  /* border-top: 1px solid #ccc; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 0 1%;
 }
 
-a {
+/* a {
   text-decoration: none;
   color: #225ca3;
   font-weight: bold;
   transition: color .1s;
-}
+} */
 
 button {
   background-color: #225ca3;
@@ -103,4 +116,12 @@ button {
   float: left;
   width: 25%;
   padding: 0 10px;
+}
+
+#top-post {
+  background-color: #adb6c4;
+}
+
+#recent-post {
+  background-color: #ffc49b;
 }
