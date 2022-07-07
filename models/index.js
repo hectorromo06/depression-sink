@@ -2,6 +2,7 @@
 const Post = require("./Post");
 const User = require("./User");
 const Comment = require("./Comment");
+const Image = require("./Image");
 
 // create associations
 User.hasMany(Post, {
@@ -33,4 +34,13 @@ Post.hasMany(Comment, {
   onDelete: "SET NULL",
 });
 
-module.exports = { User, Post, Comment };
+User.hasMany(Image, {
+  foreignKey: "user_id",
+});
+
+Image.belongsTo(User, {
+  foreignKey: "user_id",
+  onDelete: "SET NULL",
+});
+
+module.exports = { User, Post, Comment, Image };
