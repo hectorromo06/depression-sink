@@ -41,7 +41,7 @@
     transition: color .1s;
   }
 
-  button {
+  .button, .btn {
     background-color: #225ca3;
     border: 0;
     padding: 1%;
@@ -52,32 +52,25 @@
     border-radius: 5px;
   }
   
-  /* .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      padding: 20px;
-      text-align: center;
-      background-color: #f1f1f1;
-      margin-bottom: 30px;
-      
-    }
-  .column {
+
+  /* .column {
     float: left;
     width: 25%;
     padding: 0 10px;
-  }
-  .top-post {
+  } */
+  /* .top-post {
     height: 70px;
     margin-bottom: 20px;
   }
    */
 
-  #hero {
+  /* #hero {
     width: 100%;
     height: 400px;
     background-image: url("/images/a5.jpg");
     background-size: center;
   
-  }
+  }  */
  
   .card{
     width: 18rem;
@@ -90,4 +83,12 @@
 img{
  width: 100%;
  border-radius:10px 10px 0 0;
+}
+
+.cards{
+width: 30rem;
+ border-radius: 10px;
+ border:none;
+ box-shadow: 5px 4px 5px rgba(0,0,0,0.1);
+
 }

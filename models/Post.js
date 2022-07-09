@@ -63,7 +63,7 @@ Post.init(
     },
 
     data: {
-      type: DataTypes.BLOB("long"),
+      type: DataTypes.STRING,
     },
 
     user_id: {

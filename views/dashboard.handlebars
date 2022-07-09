@@ -3,7 +3,7 @@
   <h2>Dashboard</h2>
 
   
-  <form class="new-post-form card"  enctype="multipart/form-data" >
+  <form class="new-post-form cards"  enctype="multipart/form-data" >
     <h3>Create New Post</h3>
 
      <div>
@@ -31,14 +31,12 @@
 </section>
 
 {{#if posts.length}}
-<section>
+<section class="cards">
   <h2>Your Posts</h2>
   <ol>
     {{#each posts as |post|}}
-    <li>
-      {{> recent-post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
+      {{> top-post }}
+      <a href="/dashboard/edit/{{post.id}}" class="btn">Edit post</a>
     {{/each}}
   </ol>
 </section>
@@ -46,3 +44,4 @@
 
 
 <script src="/javascript/add-post.js"></script>
+<script src="/javascript/upload.js"></script>
