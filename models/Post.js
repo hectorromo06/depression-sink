@@ -57,6 +57,7 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+
     content: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -65,6 +66,7 @@ Post.init(
     data: {
       type: DataTypes.BLOB("long"),
     },
+
 
     user_id: {
       type: DataTypes.INTEGER,
