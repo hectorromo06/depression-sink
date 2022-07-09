@@ -16,13 +16,13 @@
       <h1>
         Depression Sink
       </h1>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/dashboard">Dashboard</a>
+      <nav class="uk-position-top-right">
+        <a href="/" class="uk-button uk-button-text">Home</a>
+        <a href="/dashboard" class="uk-button uk-button-text">Dashboard</a>
         {{#if loggedIn}}
-        <a href="/" class="logout">Logout</a>
+        <a href="/" class="logout" class="uk-button uk-button-text">Logout</a>
         {{else}}
-        <a href="/login">Login</a>
+        <a href="/login" class="uk-button uk-button-text">Login</a>
         {{/if}}
 
       </nav>
@@ -36,8 +36,8 @@
     <footer>
       <h2>Thanks for visiting Depression Sink!</h2>
       <div>
-        <a href="/contact">Contact Us</a>
-        <a href="/guideline">Community Guidelines</a>
+        <a href="/contact" class="uk-button uk-button-text">Contact Us</a>
+        <a href="/guideline" class="uk-button uk-button-text">Community Guidelines</a>
 
       </div>
     </footer>

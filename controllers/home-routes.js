@@ -1,7 +1,9 @@
 const router = require("express").Router();
 
 const sequelize = require("../config/connection");
-const { Post, User, Comment, Image } = require("../models");
+
+const { Post, User, Comment, Vote, Image } = require("../models");
+
 
 // const multer = require("multer");
 // const upload = multer({ dest: "/public/uploads/" });
@@ -11,7 +13,19 @@ const { Post, User, Comment, Image } = require("../models");
 router.get("/", (req, res) => {
   console.log("======================");
   Post.findAll({
-    attributes: ["id", "post_url", "title", "created_at"],
+    attributes: [
+      "id",
+      "content",
+      "title",
+      "data",
+      "created_at",
+      [
+        sequelize.literal(
+          "(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)"
+        ),
+        "vote_count",
+      ],
+    ],
     include: [
       {
         model: Comment,
@@ -47,7 +61,19 @@ router.get("/post/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: ["id", "post_url", "title", "created_at"],
+    attributes: [
+      "id",
+      "content",
+      "title",
+      "data",
+      "created_at",
+      [
+        sequelize.literal(
+          "(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)"
+        ),
+        "vote_count",
+      ],
+    ],
     include: [
       {
         model: Comment,
