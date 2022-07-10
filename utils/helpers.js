@@ -5,6 +5,7 @@ module.exports = {
     ).getDate()}/${new Date(date).getFullYear()}`;
   },
   format_url: (url) => {
+    if (!url) return // added to resolve issue with homepage.handlebars
     return url
       .replace("http://", "")
       .replace("https://", "")

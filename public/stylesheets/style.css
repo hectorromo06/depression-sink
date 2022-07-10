@@ -1,72 +1,39 @@
+:root {
+  --main-bg-color: #294c60;
+  --secondary-bg-color: #adb6c4;
+  --third-bg-color: #ffc49b;
+  --dark-bg-text-color: white;
+  --light-bg-text-color: #001b2e;
+  --secondary-text-color: #ffefd3;
+}
+
 * {
   box-sizing: border-box;
-}
-
-button {
-    background-color: #225ca3;
-    border: 0;
-    padding: 1%;
-    color: white;
-    font-weight: bold;
-    transition: background-color .1s;
-    cursor: pointer;
-    border-radius: 5px;
-}
-  
-.new-post-form button {
-  margin-top: 2%;
-}
-
-  .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      padding: 16px;
-      text-align: center;
-      background-color: #f1f1f1;
-      
-    }
-  .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-  }
-  .top-post {
-    height: 70px;
-  }
-  
-body,
-html {
-  height: 100%;
-  padding: 0;
-  margin: 0;
   font-family: sans-serif;
-  color: #333;
-
 }
 
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
 
 header {
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1%;
+  width: 100%;
+  background-color: var(--main-bg-color);
+}
+
+h1 {
+  color: var(--dark-bg-text-color);
+}
+
+nav {
+  margin-top: 2%;
+  margin-right: 2%;
 }
 
 footer {
-  border-top: 1px solid #ccc;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 0 1%;
 }
+
 
 a {
   text-decoration: none;
@@ -75,7 +42,7 @@ a {
   transition: color .1s;
 }
 
-button {
+/* button {
   background-color: #225ca3;
   border: 0;
   padding: 1%;
@@ -84,18 +51,51 @@ button {
   transition: background-color .1s;
   cursor: pointer;
   border-radius: 5px;
+} */
+
+/* .wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+} */
+
+.top-post {
+  background-color: #adb6c4;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-
+.recent-post {
+  background-color: #ffc49b;
 }
 
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
+.hero {
+  background-image: url("/images/a5.jpg");
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
+
+
+/* .card{
+  width: 18rem;
+ border-radius: 10px;
+ border:none;
+ box-shadow: 10px 4px 10px rgba(0,0,0,0.6);
+
+} */
+
+img{
+  width: 100%;
+  border-radius:10px 10px 0 0;
+ }
+
+ /* .cards{
+  width: 30rem;
+   border-radius: 10px;
+   border:none;
+   box-shadow: 5px 4px 5px rgba(0,0,0,0.1);
+  
+  } */
