@@ -5,24 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Depression Sink</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-  <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
-  <div class="wrapper">
+  <div>
     <header>
       <h1>
         Depression Sink
       </h1>
       <nav class="uk-position-top-right">
-        <a href="/" class="uk-button uk-button-text">Home</a>
-        <a href="/dashboard" class="uk-button uk-button-text">Dashboard</a>
+        <a href="/" class="uk-button uk-button-text uk-text-muted">Home</a>
+        <a href="/dashboard" class="uk-button uk-button-text uk-text-muted">Dashboard</a>
         {{#if loggedIn}}
-        <a href="/" class="logout" class="uk-button uk-button-text">Logout</a>
+        <a href="/" class="logout uk-button uk-button-text uk-text-muted">Logout</a>
         {{else}}
-        <a href="/login" class="uk-button uk-button-text">Login</a>
+        <a href="/login" class="uk-button uk-button-text uk-text-muted">Login</a>
         {{/if}}
 
       </nav>
@@ -34,8 +35,8 @@
 
 
     <footer>
-      <h2>Thanks for visiting Depression Sink!</h2>
-      <div>
+      <h2 class="uk-position-bottom-left">Thanks for visiting Depression Sink!</h2>
+      <div class="uk-position-bottom-right">
         <a href="/contact" class="uk-button uk-button-text">Contact Us</a>
         <a href="/guideline" class="uk-button uk-button-text">Community Guidelines</a>
 
@@ -46,7 +47,6 @@
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}
-
 </body>
 
 </html>
