@@ -1,64 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Depression Sink</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
-
-<body>
-  <div class="wrapper">
-    <header>
-      <h1>
-        Depression Sink
-      </h1>
-      <nav>
-            <a href="/">Home</a>
-            <a href="/dashboard">Dashboard</a>
-             {{#if loggedIn}}
-             <a href="/" class="logout">Logout</a>
-             {{else}}
-            <a href="/login">Login</a>
-            {{/if}}
-             
-    </nav>
-    </header>
-
-    <main>
-      {{{ body }}}
-    </main>
-
-
-    <footer>
-      <h2>Thanks for visiting Depression Sink!</h2>
-      <div>
-          <a href="/contact">Contact Us</a>
-          <a href="/guideline">Community Guidelines</a>
-
-      </div>
-    </footer>
-  </div>
-
-   {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
- {{/if}}
-
-      <!-- bootstrap  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-
-    <!-- swiper-bundle -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-</body>
-
-</html>
-
 {{!-- <!DOCTYPE html>
 <html lang="en">
 
@@ -119,3 +58,64 @@
 </body>
 
 </html> --}}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Depression Sink</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>
+        Depression Sink
+      </h1>
+      <nav>
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+             {{#if loggedIn}}
+             <a href="/" class="logout">Logout</a>
+             {{else}}
+            <a href="/login">Login</a>
+            {{/if}}
+             
+    </nav>
+    </header>
+
+    <main>
+      {{{ body }}}
+    </main>
+
+
+    <footer>
+      <h2>Thanks for visiting Depression Sink!</h2>
+      <div>
+          <a href="/contact">Contact Us</a>
+          <a href="/guideline">Community Guidelines</a>
+
+      </div>
+    </footer>
+  </div>
+
+   {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+ {{/if}}
+
+      {{!-- <!-- bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    <!-- swiper-bundle -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> --}}
+</body>
+
+</html>
