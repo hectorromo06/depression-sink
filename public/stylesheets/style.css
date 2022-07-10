@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-
   font-family: sans-serif;
 }
 
@@ -14,7 +13,7 @@ nav {
 header {
   border-bottom: 1px solid #ccc;
   display: flex;
-
+  width: 100%;
   align-items: center;
   padding: 0 1%;
   background-color: #294c60;
@@ -55,21 +54,21 @@ button {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
 
-
-#top-post {
+/* #top-post {
   background-color: #adb6c4;
-}
+} */
 
-#recent-post {
+/* #recent-post {
   background-color: #ffc49b;
-}
+} */
 
-#hero {
+/* #hero {
   background-image: url("/images/a5.jpg");
   height: 300px;
   background-size: cover;
   background-position: center;
   position: relative;
-}
+} */
 
