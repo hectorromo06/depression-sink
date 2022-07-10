@@ -1,4 +1,17 @@
-<div class="comments uk-flex uk-flex-around uk-comment uk-comment-primary">
+<div class="comments">
+  {{#each this}}
+  <section class="comment">
+    <div class="meta">
+      {{user.username}} on {{format_date created_at}}
+    </div>
+    <div class="text">
+      {{comment_text}}
+    </div>
+  </section>
+  {{/each}}
+</div>
+
+{{!-- <div class="comments uk-flex uk-flex-around uk-comment uk-comment-primary">
   {{#each this}}
   <section class="comment uk-margin uk-comment-list">
     <div class="meta">
@@ -9,4 +22,4 @@
     </div>
   </section>
   {{/each}}
-</div>
+</div> --}}

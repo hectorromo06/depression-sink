@@ -45,3 +45,51 @@
 
 <script src="/javascript/add-post.js"></script>
 <script src="/javascript/upload.js"></script>
+
+{{!-- <section>
+<div>
+  <h2>Dashboard</h2>
+
+  
+  <form class="new-post-form cards"  enctype="multipart/form-data" >
+    <h3>Create New Post</h3>
+
+     <div>
+      <label for="file">upload</label>
+      <input
+                type="file"
+                name="file"
+                id="input-files"
+                class="form-control-file border"
+              />
+    </div>
+
+    <div>
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    <div>
+      <label for="post-content">Content</label>
+      <input id="post-content" name="post-content" />
+    </div>
+   
+    <button type="submit" class="btn">Create</button>
+  </form>
+  </div>
+</section>
+
+{{#if posts.length}}
+<section class="cards">
+  <h2>Your Posts</h2>
+  <ol>
+    {{#each posts as |post|}}
+      {{> top-post }}
+      <a href="/dashboard/edit/{{post.id}}" class="btn">Edit post</a>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+
+<script src="/javascript/add-post.js"></script>
+<script src="/javascript/upload.js"></script> --}}
