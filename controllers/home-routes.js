@@ -123,4 +123,11 @@ router.get("/new-post", (req, res) => {
   res.render("new-post");
 });
 
+router.get("/community-guidelines", (req, res) => {
+  res.render("guideline");
+});
+
+router.get("/contact", (req, res) => {
+  res.render("contact");
+});
 module.exports = router;

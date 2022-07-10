@@ -19,14 +19,17 @@
         Depression Sink
       </h1>
       <nav>
-            <a href="/">Home</a>
-            <a href="/dashboard">Dashboard</a>
-             {{#if loggedIn}}
+       
+              <a href="/">Home</a>
+         |
+              <a href="/dashboard">Dashboard</a>
+         |
+            {{#if loggedIn}}
              <a href="/" class="logout">Logout</a>
              {{else}}
             <a href="/login">Login</a>
             {{/if}}
-             
+          
     </nav>
     </header>
 
@@ -36,10 +39,11 @@
 
 
     <footer>
-      <h2>Thanks for visiting Depression Sink!</h2>
+      <h3>Thanks for visiting Depression Sink!</h3>
       <div>
           <a href="/contact">Contact Us</a>
-          <a href="/guideline">Community Guidelines</a>
+          |
+          <a href="/community-guidelines">Community Guidelines</a>
 
       </div>
     </footer>
