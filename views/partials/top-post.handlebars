@@ -1,18 +1,19 @@
+  <div class="top-post swiper-slide d-flex justify-content-center">
+    <div class="card">
+        <figure class="mb-0">
+            {{!-- <img src="{{data}}"> --}}
+            {{!-- <img src="/images/a1.jpg"> --}}
+            <img src="/public/images/ {{ data }}">
+        </figure>
 
-<article class="row top-post uk-flex uk-flex-around">
-<div class="column">
-<div class="card uk-margin">
-    <h3><a href="{{post_url}}" target="_blank">{{title}}</a><span>({{format_url post_url}})</span></h3>
-    <p><a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a></p>
-</div>
-<div class="">
-    
-    
-     <a href="/post/{{id}}">{{post.length}} {{format_plural "like" postes.length}}</a>
-     {{vote_count}} {{format_plural "point" vote_count}} by {{user.username}} on {{format_date created_at}}
-    |
-    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-</div>
-    
-</div>
-</article>
+    <div class="card-body bg-light d-flex flex-column justify-content-center">
+
+        <h3 class="card-title"><a href="{{content}}" target="_blank">{{title}}</a></h3>
+        <p class="card-text">{{format_url content}}</p>
+        <a href="/post/{{id}}">{{post.length}} {{format_plural "like" postes.length}}</a>
+        {{vote_count}} 
+        |
+         <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+    </div>
+    </div>
+    </div>

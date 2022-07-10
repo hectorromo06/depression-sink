@@ -55,10 +55,10 @@ button {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
 
-
-#top-post {
-  background-color: #adb6c4;
+.top-post {
+  background-color: #ffffff;
 }
 
 #recent-post {
@@ -73,3 +73,24 @@ button {
   position: relative;
 }
 
+
+/* .card{
+  width: 18rem;
+ border-radius: 10px;
+ border:none;
+ box-shadow: 10px 4px 10px rgba(0,0,0,0.6);
+
+}
+
+img{
+  width: 100%;
+  border-radius:10px 10px 0 0;
+ }
+
+ .cards{
+  width: 30rem;
+   border-radius: 10px;
+   border:none;
+   box-shadow: 5px 4px 5px rgba(0,0,0,0.1);
+  
+  } */
