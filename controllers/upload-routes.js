@@ -1,7 +1,7 @@
-// const router = require("express").Router();
-// const sequelize = require("../config/connection");
-// const multer = require("multer");
-// const withAuth = require("../utils/auth");
+const router = require("express").Router();
+const sequelize = require("../config/connection");
+const multer = require("multer");
+const withAuth = require("../utils/auth");
 
 // // router.get("/upload", (req, res) => {
 // //   res.send("Hello People");
@@ -85,7 +85,7 @@
 //   // req.body will contain the text fields, if there were any
 // });
 
-// module.exports = router;
+module.exports = router;
 
 
 // //delete 
