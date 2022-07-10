@@ -1,69 +1,71 @@
 // import all models
-const Post = require('./Post');
-const User = require('./User');
-const Like = require('./Like');
-const Comment = require('./Comment');
+const Post = require("./Post");
+const User = require("./User");
+const Vote = require("./Vote");
+const Comment = require("./Comment");
+const Image = require("./Image");
 
 // create associations
 User.hasMany(Post, {
-  foreignKey: 'user_id'
+  foreignKey: "user_id",
 });
 
 Post.belongsTo(User, {
-  foreignKey: 'user_id',
-  onDelete: 'SET NULL'
+  foreignKey: "user_id",
+  onDelete: "SET NULL",
 });
 
 User.belongsToMany(Post, {
-  through: Like,
-  as: 'liked_posts',
+  through: Vote,
+  as: "voted_posts",
 
-  foreignKey: 'user_id',
-  onDelete: 'SET NULL'
+  foreignKey: "user_id",
+  onDelete: "SET NULL",
 });
 
 Post.belongsToMany(User, {
-  through: Like,
-  as: 'liked_posts',
-  foreignKey: 'post_id',
-  onDelete: 'SET NULL'
+  through: Vote,
+  as: "voted_posts",
+  foreignKey: "post_id",
+  onDelete: "SET NULL",
 });
 
-Like.belongsTo(User, {
-  foreignKey: 'user_id',
-  onDelete: 'SET NULL'
+Vote.belongsTo(User, {
+  foreignKey: "user_id",
+  onDelete: "SET NULL",
 });
 
-Like.belongsTo(Post, {
-  foreignKey: 'post_id',
-  onDelete: 'SET NULL'
+Vote.belongsTo(Post, {
+  foreignKey: "post_id",
+  onDelete: "SET NULL",
 });
 
-User.hasMany(Like, {
-  foreignKey: 'user_id'
+User.hasMany(Vote, {
+  foreignKey: "user_id",
 });
 
-Post.hasMany(Like, {
-  foreignKey: 'post_id'
+Post.hasMany(Vote, {
+  foreignKey: "post_id",
 });
 
 Comment.belongsTo(User, {
-  foreignKey: 'user_id',
-  onDelete: 'SET NULL'
+  foreignKey: "user_id",
+  onDelete: "SET NULL",
 });
 
 Comment.belongsTo(Post, {
-  foreignKey: 'post_id',
-  onDelete: 'SET NULL'
+  foreignKey: "post_id",
+  onDelete: "SET NULL",
 });
 
 User.hasMany(Comment, {
-  foreignKey: 'user_id',
-  onDelete: 'SET NULL'
+  foreignKey: "user_id",
+  onDelete: "SET NULL",
 });
 
 Post.hasMany(Comment, {
-  foreignKey: 'post_id'
+  foreignKey: "post_id",
 });
 
-module.exports = { User, Post, Like, Comment };
+module.exports = { User, Post, Vote, Comment };
+

@@ -1,1 +1,35 @@
-<div>welcome to my page</div>
+<div class="container">
+  <h2>Top Posts</h2>
+  <div class="swiper-container mySwiper my-5 py-5">
+    <div class="swiper-wrapper">
+      
+              {{#each posts as |post|}}
+               {{> top-post post }}
+               {{/each}}
+     
+    </div>
+    <!--  for left and right navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+  </div>
+</div>
+
+
+
+
+
+  
+<script src="/javascript/slide.js"></script>
+
+
+{{!-- <div id="recent-post">
+  <h2>Recent Posts</h2>
+  <ol class="post-list">
+  {{#each posts as |post|}}
+    {{> recent-post post }}
+  {{/each}}
+</ol>
+</div> --}}
+
+

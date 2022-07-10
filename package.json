@@ -10,9 +10,27 @@
     "express.js": "^1.0.0",
     "handlebars": "^4.7.7",
     "multer": "^1.4.5-lts.1",
-    "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
     "node.js": "^0.0.1-security",
     "sequelize": "^6.21.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
+  },
+  "name": "depression-sink",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectorromo06/depression-sink.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hectorromo06/depression-sink/issues"
+  },
+  "homepage": "https://github.com/hectorromo06/depression-sink#readme"
 }
