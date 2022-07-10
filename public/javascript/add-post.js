@@ -3,7 +3,9 @@ async function newFormHandler(event) {
 
   const title = document.querySelector('input[name="post-title"]').value;
   const content = document.querySelector('input[name="post-content"]').value;
-  const data = document.querySelector('input[name="file"]').value;
+  // const data = document.querySelector('input[name="file"]').value;
+
+
   //const data = document.querySelector('input[name="file"]').files[0].name;
   //const data = document.getElementById("input-files").files[0].name;
   // const data = document.getElementById("inputFile");

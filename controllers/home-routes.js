@@ -1,9 +1,7 @@
 const router = require("express").Router();
 
 const sequelize = require("../config/connection");
-const { Post, User, Comment, Vote } = require("../models");
-
-//deleted Image for now
+const { Post, User, Comment, Vote, Image } = require("../models");
 
 // const multer = require("multer");
 // const upload = multer({ dest: "/public/uploads/" });
@@ -123,6 +121,14 @@ router.get("/signup", (req, res) => {
 
 router.get("/new-post", (req, res) => {
   res.render("new-post");
+});
+
+router.get('/login', (req, res) => {
+  res.render('login');
+});
+
+router.get('/dashboard', (req, res) => {
+ res.render('dashboard');
 });
 
 module.exports = router;
