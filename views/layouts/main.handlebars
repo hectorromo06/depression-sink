@@ -12,14 +12,16 @@
 </head>
 
 <body>
-  <div>
+
     <header>
       <h1>
         Depression Sink
       </h1>
       <nav class="uk-position-top-right">
         <a href="/" class="uk-button uk-button-text uk-text-muted">Home</a>
+        |
         <a href="/dashboard" class="uk-button uk-button-text uk-text-muted">Dashboard</a>
+        |
         {{#if loggedIn}}
         <a href="/" class="logout uk-button uk-button-text uk-text-muted">Logout</a>
         {{else}}
@@ -38,11 +40,12 @@
       <h2 class="uk-position-bottom-left">Thanks for visiting Depression Sink!</h2>
       <div class="uk-position-bottom-right">
         <a href="/contact" class="uk-button uk-button-text">Contact Us</a>
-        <a href="/guideline" class="uk-button uk-button-text">Community Guidelines</a>
+        |
+        <a href="/community-guidelines" class="uk-button uk-button-text">Community Guidelines</a>
 
       </div>
     </footer>
-  </div>
+ 
 
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>

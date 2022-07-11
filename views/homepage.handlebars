@@ -1,30 +1,17 @@
 <div class="top-post">
   <h2>Top Posts</h2>
-  <div>
-    <div>
-
+  <div class="uk-grid-small uk-child-width-1-3@s uk-flex-center uk-text-center" uk-grid>
+    
       {{#each posts as |post|}}
       {{> top-post post }}
       {{/each}}
 
-    </div>
-
+    
   </div>
 </div>
-
-
-
 
 
 
 <script src="/javascript/slide.js"></script>
 
 
-{{!-- <div id="recent-post">
-  <h2>Recent Posts</h2>
-  <ol class="post-list">
-    {{#each posts as |post|}}
-    {{> recent-post post }}
-    {{/each}}
-  </ol>
-</div> --}}
