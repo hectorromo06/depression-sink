@@ -1,17 +1,14 @@
 <div class="top-post">
   <h2>Top Posts</h2>
-  <div class="uk-grid-small uk-child-width-1-3@s uk-flex-center uk-text-center" uk-grid>
-    
+
+  <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
       {{#each posts as |post|}}
       {{> top-post post }}
       {{/each}}
-
-    
   </div>
 </div>
 
 
 
-<script src="/javascript/slide.js"></script>
-
+{{!-- <script src="/javascript/slide.js"></script> --}}
 
