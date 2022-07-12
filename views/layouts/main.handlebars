@@ -12,23 +12,25 @@
 </head>
 
 <body>
-
+<div> 
     <header>
-      <h1>
+      <h1 class="uk-position-top-left uk-text-muted">
         Depression Sink
       </h1>
+     
       <nav class="uk-position-top-right">
-        <a href="/" class="uk-button uk-button-text uk-text-muted">Home</a>
-        |
-        <a href="/dashboard" class="uk-button uk-button-text uk-text-muted">Dashboard</a>
-        |
+          
+                <a href="/" class="uk-button uk-button-text uk-text-muted">Home</a>
+          |
+                <a href="/dashboard" class="uk-button uk-button-text uk-text-muted">Dashboard</a>
+          |
         {{#if loggedIn}}
         <a href="/" class="logout uk-button uk-button-text uk-text-muted">Logout</a>
         {{else}}
         <a href="/login" class="uk-button uk-button-text uk-text-muted">Login</a>
         {{/if}}
-
-      </nav>
+        </ul>
+  
     </header>
 
     <main>
@@ -37,15 +39,15 @@
 
 
     <footer>
-      <h2 class="uk-position-bottom-left">Thanks for visiting Depression Sink!</h2>
-      <div class="uk-position-bottom-right">
+      <h2 class=" uk-text-normal uk-text-center uk-text-muted">Thanks for visiting Depression Sink!</h2>
+      <div class="uk-text-center">
         <a href="/contact" class="uk-button uk-button-text">Contact Us</a>
         |
         <a href="/community-guidelines" class="uk-button uk-button-text">Community Guidelines</a>
-
-      </div>
+    </div>
     </footer>
- 
+</div>
+  
 
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
@@ -58,6 +60,8 @@
 <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.0/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.0/dist/js/uikit-icons.min.js"></script>
-</body>
 
+
+
+</body>
 </html>

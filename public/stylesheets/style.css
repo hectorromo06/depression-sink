@@ -7,6 +7,8 @@
   --secondary-text-color: #ffefd3;
 }
 
+
+
 * {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -14,13 +16,19 @@
 
 
 header {
-  width: 100%;
+  background-color: var(--main-bg-color);
+  height: 70px;
+
+}
+
+footer {
   background-color: var(--main-bg-color);
   height: 70px;
 }
 
-h1 {
-  color: var(--dark-bg-text-color);
+h1, h2 {
+  color: white;
+  padding: 5px;
  
 }
 
@@ -30,19 +38,12 @@ nav {
   padding: 20px;
 }
 
-/* .card{
+.card{
 
  border-radius: 10px;
  border:none;
  box-shadow: 10px 5px 10px rgba(0,0,0,0.6);
-
-} */
-
-
-
-
-
-
+}
 
 .top-post {
   background-color: #adb6c4;

@@ -119,15 +119,15 @@ router.get("/login", (req, res) => {
 router.get("/signup", (req, res) => {
   res.render("signup");
 });
-
+// display new-post page
 router.get("/new-post", (req, res) => {
   res.render("new-post");
 });
-
+// display community-guidelines page
 router.get("/community-guidelines", (req, res) => {
   res.render("guideline");
 });
-
+// display contact page
 router.get("/contact", (req, res) => {
   res.render("contact");
 });
