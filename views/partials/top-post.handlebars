@@ -1,18 +1,18 @@
 <div>
-    <div class="uk-card uk-card-default uk-card-body uk-width-1-2">
-        <figure>
-            {{!-- <img src="{{data}}"> --}}
-            {{!-- <img src="/images/a1.jpg"> --}}
-            <img src="/public/images/ {{ data }}">
-        </figure>
-
-        <div>
-            <h3 class="uk-card-title"><a href="{{content}}" target="_blank">{{title}}</a></h3>
-            <p class="card-text">{{format_url content}}</p>
+    <div class="uk-card uk-card-default uk-card-body">
+  
+     <div class="top-post uk-card-media-top">
+        <img src="/images/a1.jpg" width="" height="" alt="">
+     </div>
+     <div class="uk-card-body">
+         <h3 class="uk-card-title">{{title}}</a></h3>
+         <p class="card-text">{{format_url content}}</p>
             <a href="/post/{{id}}">{{post.length}} {{format_plural "like" postes.length}}</a>
             {{vote_count}}
             |
             <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-        </div>
+     </div>
     </div>
+
+
 </div>

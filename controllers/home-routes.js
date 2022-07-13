@@ -4,10 +4,8 @@ const sequelize = require("../config/connection");
 
 const { Post, User, Comment, Vote, Image } = require("../models");
 
-
 // const multer = require("multer");
 // const upload = multer({ dest: "/public/uploads/" });
-
 
 // get all posts for homepage
 router.get("/", (req, res) => {
@@ -121,16 +119,17 @@ router.get("/login", (req, res) => {
 router.get("/signup", (req, res) => {
   res.render("signup");
 });
-
+// display new-post page
 router.get("/new-post", (req, res) => {
   res.render("new-post");
 });
-
-router.get('/login', (req, res) => {
-   res.render('login');
+// display community-guidelines page
+router.get("/community-guidelines", (req, res) => {
+  res.render("guideline");
+});
+// display contact page
+router.get("/contact", (req, res) => {
+  res.render("contact");
 });
 
-router.get('/dashboard', (req, res) => {
-  res.render('dashboard');
-});
 module.exports = router;

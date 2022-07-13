@@ -1,12 +1,6 @@
 const router = require("express").Router();
-
-const upload = require("../../utils/upload");
-const uploadController = require("../upload-routes");
-
 const sequelize = require("../../config/connection");
-
 const { Post, User, Comment, Vote } = require("../../models");
-
 const withAuth = require("../../utils/auth");
 
 // get all users
@@ -93,7 +87,6 @@ router.get("/:id", (req, res) => {
       res.status(500).json(err);
     });
 });
-
 
 router.post("/", withAuth, (req, res) => {
   // expects {title: 'Taskmaster goes public!', content: 'https://taskmaster.com/press', user_id: 1}
